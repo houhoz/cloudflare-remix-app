@@ -46,3 +46,17 @@ npm run deploy
 ```
 
 [bindings]: https://developers.cloudflare.com/pages/functions/bindings/
+
+
+```
+# 插入
+npx wrangler d1 execute my-remix-db --local --file=./schema.sql
+# 查询
+npx wrangler d1 execute my-remix-db --local --command="SELECT * FROM Customers" 
+
+npx wrangler d1 execute my-remix-db --remote --file=./schema.sql
+
+npx wrangler d1 execute my-remix-db --remote --command="SELECT * FROM Customers" 
+
+
+```
